@@ -12,8 +12,8 @@ public class Solution {
         int d1 =obj.nextInt();
         int c2 =obj.nextInt();
         int d2 =obj.nextInt();
-        double midc =(c1 + c2)/2.0;
-        double midd =(d1 + d2)/2.0;
+        double midc =(c1 + c2)/2;
+        double midd =(d1 + d2)/2;
         System.out.printf("Binoy's house is located at (%.1f,%.1f)",midc,midd);
     }
 }
