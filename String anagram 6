@@ -1,0 +1,33 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner abc = new Scanner(System.in);
+        
+        String s = abc.next();
+        
+        String d = abc.next();
+        s = s.toLowerCase();
+        d = d.toLowerCase();
+        
+        char[] arr1 = s.toCharArray();
+        char[] arr2 = d.toCharArray();
+        Arrays.sort(arr1);
+        
+        Arrays.sort(arr2);
+        if (Arrays.equals(arr1, arr2)) {
+        
+            System.out.println("The given strings are an anagram");
+        } else {
+            
+            System.out.println("The given strings are not an anagram");
+        }
+        
+        
+    }
+}
